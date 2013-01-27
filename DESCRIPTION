@@ -1,7 +1,7 @@
 Package: svGUI
 Type: Package
-Version: 0.9-53
-Date: 2012-03-31
+Version: 0.9-54
+Date: 2013-01-27
 Title: SciViews GUI API - Functions to manage GUIs
 Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
         email = "phgrosjean@sciviews.org"))
@@ -12,8 +12,6 @@ Description: Functions to manage GUIs from R
 License: GPL-2
 URL: http://www.sciviews.org/SciViews-R
 BugReports: https://r-forge.r-project.org/tracker/?group_id=194
+Packaged: 2013-01-27 21:20:15 UTC; phgrosjean
 Repository: CRAN
-Repository/R-Forge/Project: sciviews
-Repository/R-Forge/Revision: 460
-Packaged: 2012-03-31 14:16:00 UTC; rforge
-Date/Publication: 2012-04-01 13:13:35
+Date/Publication: 2013-01-28 07:37:41
