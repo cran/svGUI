@@ -9,14 +9,21 @@
 \usage{
 setUI(..., gui = .GUI)
 
-\method{setUI}{gui}(fun, call, args, res, widgets, status, msg = NULL, ...,
-  gui = .GUI)
+\method{setUI}{gui}(fun, call, args, res, widgets, status, msg = NULL, ..., gui = .GUI)
 
 startUI(..., gui = .GUI)
 
-\method{startUI}{gui}(fun, call, default, widgets = NULL,
-  status = "busy-modal", msg = "Displaying a modal dialog box",
-  msg.no.ask = "A modal dialog box was by-passed", ..., gui = .GUI)
+\method{startUI}{gui}(
+  fun,
+  call,
+  default,
+  widgets = NULL,
+  status = "busy-modal",
+  msg = "Displaying a modal dialog box",
+  msg.no.ask = "A modal dialog box was by-passed",
+  ...,
+  gui = .GUI
+)
 }
 \arguments{
 \item{...}{Any other property of the GUI, provided as named arguments.}
@@ -41,13 +48,13 @@ all its methods.}
 GUI was by-passed because \code{dont_ask()} returns \code{TRUE}), "error",
 or any other status indicator suitable for the current state of your GUI.}
 
-\item{msg}{The message expliciting the status. Cannot be provided without
+\item{msg}{The message that explains the status. Cannot be provided without
 status.}
 
 \item{default}{The default value to return if the UI is by-passed because in
 non interactive mode, or ask is \code{FALSE}.}
 
-\item{msg.no.ask}{The message expliciting the status in case the UI is
+\item{msg.no.ask}{The message that explains the status in case the UI is
 by-passed.}
 }
 \description{
@@ -85,7 +92,5 @@ myInput <- function(default = "an answer", gui = .GUI) {
 \seealso{
 \code{\link[=gui_add]{gui_add()}}, \code{\link[=$.gui]{$.gui()}}
 }
-\concept{
-GUI API implementation
-}
+\concept{GUI API implementation}
 \keyword{misc}

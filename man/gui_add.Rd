@@ -23,11 +23,19 @@ gui_add(gui.name = ".GUI", widgets = c("nativeGUI", "textCLI"), ask)
 
 guiAdd(gui.name = ".GUI", widgets = c("nativeGUI", "textCLI"), ask)
 
-gui_change(gui.name = ".GUI", widgets = c("nativeGUI", "textCLI"),
-  reset = FALSE, ask)
+gui_change(
+  gui.name = ".GUI",
+  widgets = c("nativeGUI", "textCLI"),
+  reset = FALSE,
+  ask
+)
 
-guiChange(gui.name = ".GUI", widgets = c("nativeGUI", "textCLI"),
-  reset = FALSE, ask)
+guiChange(
+  gui.name = ".GUI",
+  widgets = c("nativeGUI", "textCLI"),
+  reset = FALSE,
+  ask
+)
 
 gui_remove(gui.name)
 
@@ -80,7 +88,7 @@ value stored in \code{getOption("gui.ask")}).}
 \item{gui.or.name}{A \code{gui} object or its name.}
 }
 \description{
-Create and manipulate \code{gui} objects to manage SciViews-compatible GUIs
+Create and manipulate \code{gui} objects to manage 'SciViews'-compatible GUIs
 (Graphical User Interfaces).
 }
 \examples{
@@ -104,7 +112,5 @@ gui_remove("myGUI")
 \seealso{
 \link{gui}, \code{\link[=setUI]{setUI()}}, \code{\link[=dont_ask]{dont_ask()}}
 }
-\concept{
-GUI API implementation
-}
+\concept{GUI API implementation}
 \keyword{misc}
